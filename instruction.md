@@ -1,66 +1,19 @@
-To create a list of private webpages that hold IA reports, programs, and plans, you can create a password-protected directory within your GitHub repository. Here's how you can achieve this:
+# **Audit Charter Amending Plan**
 
-1. Create a new directory in your GitHub repository for the private webpages. For example, you can name it "private".
+Addressing the CEO's power to override the appraisal and evaluation ratings of internal auditors in the audit charter is a crucial step in reinforcing the independence and objectivity of the Internal Audit (IA) function within your organization. This measure can also help clarify the roles and responsibilities of the IA department, thereby reducing confusion among auditors about how to approach their assignments, particularly when these involve sensitive issues or potential conflicts with senior management.
 
-2. Inside the "private" directory, create a new HTML file for each private webpage. For example, create a file named "audit_charter_proposal.html" for the "Proposal to Amend the Audit Charter" document.
+Here are a few steps you could consider to address this issue effectively:
 
-3. Copy the content of the "Proposal to Amend the Audit Charter" document into the "audit_charter_proposal.html" file.
+1. **Draft a Proposal**: Start by drafting a proposal to amend the audit charter. This proposal should clearly outline the current issue with the CEO’s ability to override appraisal ratings, the potential risks it poses to the integrity of the audit function (e.g., retaliation, lack of objectivity), and the proposed amendments to safeguard IA independence.
 
-4. To password-protect the "private" directory, you can use a simple HTML form and JavaScript to prompt for a password before allowing access to the private webpages. Create a new HTML file named "login.html" inside the "private" directory with the following content:
+2. **Engage with Stakeholders**: Before presenting the proposal to the audit committee, consider engaging with key stakeholders. This could include discussions with senior auditors, risk management, and possibly legal counsel to ensure that the proposed changes are comprehensive and align with best practices and regulatory requirements.
 
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Private Webpages Login</title>
-  <script>
-    function validatePassword() {
-      var password = document.getElementById("password").value;
-      if (password === "your_password") {
-        window.location.href = "private_index.html";
-      } else {
-        alert("Invalid password. Please try again.");
-      }
-    }
-  </script>
-</head>
-<body>
-  <h2>Private Webpages Login</h2>
-  <p>Please enter the password to access the private webpages:</p>
-  <input type="password" id="password">
-  <button onclick="validatePassword()">Submit</button>
-</body>
-</html>
-```
+3. **Present to the Audit Committee**: Present the proposed changes to the audit charter to the company’s audit committee. The presentation should include a detailed explanation of why these changes are necessary, the expected benefits, and any potential impacts or challenges. The audit committee is typically responsible for overseeing the independence of the internal audit function and would be instrumental in endorsing changes that strengthen governance structures.
 
-Replace "your_password" with your desired password.
+4. **Revise the Audit Charter**: Once approval is obtained, revise the audit charter accordingly. Ensure that the revisions clearly define the limits of executive power over IA evaluations and establish a transparent process for handling disputes or disagreements regarding audit findings or auditor performance.
 
-5. Create a new HTML file named "private_index.html" inside the "private" directory. This file will serve as the index page for the private webpages. Add the following content to "private_index.html":
+5. **Communicate Changes**: After the revisions are approved, communicate the changes to the entire IA department and relevant parts of the organization. It's important that all internal auditors are aware of the new guidelines and understand how these changes protect their work and enhance the credibility of the audit function.
 
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Private Webpages</title>
-</head>
-<body>
-  <h2>Private Webpages</h2>
-  <ul>
-    <li><a href="audit_charter_proposal.html">Proposal to Amend the Audit Charter</a></li>
-    <!-- Add more private webpage links here -->
-  </ul>
-</body>
-</html>
-```
+6. **Monitor and Review**: After implementing the changes, monitor the effects of these revisions on the audit assignments and the overall morale and performance of the IA team. Be prepared to review and adjust the provisions in the audit charter if needed, based on practical experience and feedback from the auditors and other stakeholders.
 
-6. In your public "index.html" file, add a link to the "login.html" file to provide access to the private webpages:
-
-```html
-<a href="private/login.html">Access Private Webpages</a>
-```
-
-7. Commit and push your changes to your GitHub repository.
-
-Now, when someone clicks on the "Access Private Webpages" link in your public "index.html" file, they will be redirected to the "login.html" page. After entering the correct password, they will be taken to the "private_index.html" page, which contains a list of links to the private webpages, including the "Proposal to Amend the Audit Charter" document.
-
-Note: This is a basic implementation of password protection using client-side JavaScript. For enhanced security, consider using server-side authentication mechanisms or more robust access control solutions.
+By taking these steps, you not only safeguard the independence and objectivity of your department but also contribute to a governance structure that supports ethical practices and accountability within the organization.
