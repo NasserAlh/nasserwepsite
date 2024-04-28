@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Private Webpages Login</title>
+    <script>
+        function validatePassword() {
+            var password = document.getElementById("password").value;
+            if (password === "20201971Nh") {
+                window.location.href = "private_index.html";
+            } else {
+                alert("Invalid password. Please try again.");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Private Webpages Login</h2>
+    <p>Please enter the password to access the private webpages:</p>
+    <input type="password" id="password">
+    <button onclick="validatePassword()">Submit</button>
+</body>
+
+</html>
